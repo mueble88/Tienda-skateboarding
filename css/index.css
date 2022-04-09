@@ -1,0 +1,339 @@
+body{
+    background-color: #222126;
+}
+
+
+/* se crea slide o carrusel */
+
+.slide {
+    position:relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 150px;
+    margin-bottom: 40px;
+    /* margin-left: 100px; */
+}
+
+ .slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc( 800px + 3em);
+} 
+
+.slide-open:checked + .slide-item {
+    position: static;
+    text-align: center;
+    opacity: 100;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.slide-item img {
+    display: block;
+    height:auto;
+    max-width: 100%;
+}
+
+.p-aqui{
+    color: #222126;
+    font-family: fantasy;
+    font-size: 60px;
+    text-decoration:none;
+    position:absolute;
+    padding-top: 60px;
+    padding-left: 500px;
+}
+
+.link-aqui{
+    color: #f5911d;
+    font-family: fantasy;
+    font-size: 60px;
+    padding-left: 20px;
+    text-decoration:none;
+}
+
+.link-aqui:hover{
+    color: #ffffff;
+}
+
+
+.p-favoritos{
+    position:absolute;
+    padding-top: 540px;
+    padding-left: 170px;
+}
+
+.link-favoritos{
+    color: #f5cd42;
+    font-family:sans-serif;
+    font-size: 34px;
+    text-decoration:none;
+}
+
+.link-favoritos:hover{
+    color: #ffffff;
+}
+
+/* controlador de las flechas */
+.slide-control {
+    /* background-image: url(../img/botonIzq.png);
+    background: rgba(0, 0, 0, 0.28); 
+    border-radius: 50%; 
+    color: #fff;  */
+    cursor: pointer; 
+    display: none; 
+    font-size: 40px;
+    height: 40px; 
+    line-height: 35px; 
+    position: absolute;
+    top: 20%;
+    -webkit-transform: translate(0, -50%); 
+    cursor: pointer; 
+    -ms-transform: translate(0, -50%); 
+    transform: translate(0, -50%); 
+    text-align: center; 
+    width: 40px; 
+    z-index: 10; 
+}
+
+/* posicion de las flechas */
+.slide-control.prev { 
+    left: 5%;
+}
+
+.slide-control.next {
+    right: 8%;
+}
+
+/* .slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+} */
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+     padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 0;
+    /* padding-bottom: 30px; */
+}
+
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slide-circulo {
+    color: #ffffff; 
+    cursor: pointer;
+    display: block;
+    font-size: 80px;
+}
+
+.slide-circulo:hover {
+    color: #222126;
+}
+
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo {
+    color: #f5911d;
+}
+
+/* #titulo {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+         -1px 0px 2px rgba(255, 255, 255, 0);
+} */
+
+
+
+/* se crea section de la historia */
+h1{
+    color: #f5911d;
+    font-family: Bahnschrift;
+    padding-left: 39px;
+}
+
+.parrafo1{
+    color: #ffffff;
+    font-family: Bahnschrift ;
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.img1{
+    width: 50%;
+    padding-right: 30px;
+}
+
+.parrafo2{
+    color: #ffffff;
+    font-family: Bahnschrift ;
+    font-size: 20px;
+}
+
+.img2{
+    width: 100%;
+}
+
+.masHistoria{
+    color: #f5911d;
+    font-family: Bahnschrift;
+    font-size: 40px;
+    text-decoration:none;
+}
+
+.parrafo3{
+    color: #ffffff;
+    font-family: Bahnschrift ;
+    width: 100%;
+}
+
+.masHistoria:hover{
+    color: #ffffff;
+    width: 100%;
+}
+
+/* se crea seccion acerca de  */
+
+.acerca-de{
+    background-color: #ffffff;
+    height: 700px;
+}
+
+
+.card{
+    background-color: #222126;
+    border-radius: 20px;
+    width:60%;
+    height:430px; 
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.card-title{
+    font-family:Bahnschrift ;
+    font-size: 28px;
+    color:#f5cd42;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.card-body a{
+    text-decoration:none;
+}
+
+.card-body a:hover { 
+    color: #ffffff; 
+}
+
+
+
+
+/* se crea formulario */
+
+.formulario{
+    background-color: #222126;
+    height: 600px;
+}
+
+
+/* se crea el footer  */
+
+footer{
+    background-color:#f5cd42 ;
+    width: 100%;
+    height: 720px;
+}
+
+footer .row{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+footer ul{
+    padding-top: 120px;
+    width: 100%;
+}
+
+footer li {
+    font-family:Bahnschrift ;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style:none;
+    width: 500px;
+}
+
+footer a{
+    font-family:Bahnschrift ;
+    font-size: 20px;
+    color: #222126;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration:none;
+}
+
+footer a:hover { 
+    color: #ffffff; 
+}
+
+
+.logofooter{
+    width: 100%;
+}
+
+.perfil, .email, .instagram, .facebook, .telefono{
+    padding-right: 20px; 
+}
+
+.linkemail{
+    color: #222126;
+    text-decoration: none;
+    font-family:Bahnschrift ;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style:none;     
+}
+
+.linkemail:hover { 
+    color: #ffffff; 
+}
+.titulofooter{
+    padding-bottom: 40px;
+}
+

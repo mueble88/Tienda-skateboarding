@@ -1,0 +1,75 @@
+
+
+
+
+
+
+
+/* se crea el footer  */
+
+footer{
+    background-color:#f5cd42 ;
+    width: 100%;
+    height: 720px;
+}
+
+footer .row{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+footer ul{
+    padding-top: 120px;
+    width: 100%;
+}
+
+footer li {
+    font-family:Bahnschrift ;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style:none;
+    width: 500px;
+}
+
+footer a{
+    font-family:Bahnschrift ;
+    font-size: 20px;
+    color: #222126;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration:none;
+}
+
+footer a:hover { 
+    color: #ffffff; 
+}
+
+
+.logofooter{
+    width: 100%;
+}
+
+.perfil, .email, .instagram, .facebook, .telefono{
+    padding-right: 20px; 
+}
+
+.linkemail{
+    color: #222126;
+    text-decoration: none;
+    font-family:Bahnschrift ;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style:none;     
+}
+
+.linkemail:hover { 
+    color: #ffffff; 
+}
+.titulofooter{
+    padding-bottom: 40px;
+}

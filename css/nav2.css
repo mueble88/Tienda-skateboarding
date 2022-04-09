@@ -1,0 +1,66 @@
+/* Se crea navbar */
+
+.navbar{
+    background-image: url(../img/navbar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 553px; 
+}
+
+.logo{
+    height: 400px;
+    padding-left: 250px;
+    /* position:absolute; */
+}
+
+.navbar-nav{
+    margin-left:auto;  
+}
+
+ul{
+    padding-right: 130px;
+    padding-bottom: 150px;
+}
+
+li{
+    padding-right: 80px;
+}
+
+.nav-link{
+    color: #f5cd42;
+    font-size: 30px;
+    text-align: center;
+    font-family: Swis721 BlkCn BT Black;
+    text-decoration:none;
+}
+
+#navbarDropdown{
+    color: #f5cd42;
+}
+
+#navbarDropdown:hover{
+    color:#ffffff;
+}
+
+.nav-link:hover {
+    color:#ffffff;
+  }
+
+
+.dropdown-menu{
+    background-color:#222126 ;
+    height: 140px;
+}
+
+.dropdown-item{
+    color: #f5cd42;
+    font-size: 25px;
+    font-family: Swis721 BlkCn BT Black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.carrito{
+    width: 40px;
+}
